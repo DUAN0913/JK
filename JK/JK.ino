@@ -20,13 +20,11 @@ const byte WEI[4] = {0x01,0x02,0x04,0x08};
 int nowMinute;//分
 int nowHour;//时
 
-int DXX;
-int ZW;
-
 void setup(){
   pinMode(latchPin,OUTPUT);
   pinMode(clockPin,OUTPUT);
   pinMode(dataPin,OUTPUT);
+  Serial.begin(9600);
   }
 
 void loop(){
